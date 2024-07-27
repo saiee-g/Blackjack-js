@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("bjback.jpg");
     background-repeat: no-repeat;
@@ -7,31 +7,69 @@ body{
     text-align: center;
     font-weight: bold;
     color: white;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-h1{
+h1 {
     color: goldenrod;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 #message-el {
     color: bisque;
     font-style: italic;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-button{
+button {
     background-color: goldenrod;
     color: white;
-    width: 150px;
-    border-radius: 2px;
+    width: 200px;
+    border-radius: 5px;
     border: none;
     box-shadow: 10px;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
-button:hover{
+p {
+    font-size: 1.2em;
+}
+
+#quit-btn {
+    background-color: tomato;
+}
+
+button:hover {
     background-color: rgb(158, 120, 22) 
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #message-el {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 150px; 
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
